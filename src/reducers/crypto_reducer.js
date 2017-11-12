@@ -4,7 +4,7 @@ import _ from 'lodash';
 
 const initialState = {
   isFetching: false,
-  data: null,
+  data: [],
   hasError: false,
   errorMessage: null
 };

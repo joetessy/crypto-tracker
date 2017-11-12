@@ -6,7 +6,8 @@ const styles = StyleSheet.create({
   container: {
     display: "flex",
     marginBottom: 20,
-    borderBottomColor: '#e5e5e5',
+    // borderBottomColor: '#e5e5e5',
+    borderBottomColor: 'black',
     borderBottomWidth: 3,
     padding: 20
   },
@@ -17,22 +18,22 @@ const styles = StyleSheet.create({
     marginBottom: 15
   },
   coinSymbol: {
-    marginTop: 10,
+    color: 'white',
     marginLeft: 20,
     marginRight: 5,
     fontWeight: "bold"
   },
   coin_name: {
-    marginTop: 10,
+    color: 'white',
     marginLeft: 5,
     marginRight: 20
   },
   separator: {
-    marginTop: 10
+    color: 'white',
   },
   coinPrice: {
-    marginTop: 10,
     marginRight: 10,
+    color: 'white',
     fontWeight: "bold"
   },
   image: {
@@ -40,14 +41,14 @@ const styles = StyleSheet.create({
     height: 35
   },
   moneySymbol: {
-    marginTop: 10,
+    color: 'white',
     fontWeight: 'bold'
   },
   statisticsContainer: {
     display: 'flex',
     borderTopColor: '#FAFAFA',
     borderTopWidth: 2,
-    padding: 10,
+    paddingTop: 10,
     flexDirection: "row",
     justifyContent: "space-around"
   },
@@ -85,10 +86,10 @@ const CoinCard = ({
       </View>
       <View style={statisticsContainer}>
 
-          <Text>24h:
+          <Text style={{color: 'white'}}>24h:
                <Text style={percentChange24h < 0 ? percentChangeMinus : percentChangePlus }> {percentChange24h} % </Text>
           </Text>
-          <Text>7d:
+          <Text  style={{color: 'white'}}>7d:
               <Text style={percentChange7d < 0 ? percentChangeMinus : percentChangePlus }> {percentChange7d} % </Text>
           </Text>
       </View>

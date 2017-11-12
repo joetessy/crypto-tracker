@@ -8,7 +8,7 @@ export default class App extends React.Component {
   render() {
     return (
       <Provider store={Store}>
-        <View>
+        <View style={{backgroundColor: '#410105'}}>
           <Header/>
           <CryptoContainer />
         </View>

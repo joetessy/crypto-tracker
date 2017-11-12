@@ -19,11 +19,17 @@
     "test": "node node_modules/jest/bin/jest.js --watch",
     "postinstall": "remotedev-debugger — hostname localhost — port 5678 — injectserver"
   },
+  "remotedev": {
+    "hostname": "localhost",
+    "port": 5678
+  },
   "jest": {
     "preset": "jest-expo"
   },
   "dependencies": {
+    "axios": "^0.17.1",
     "expo": "^22.0.2",
+    "lodash": "^4.17.4",
     "react": "16.0.0-beta.5",
     "react-native": "^0.49.5",
     "react-redux": "^5.0.6",

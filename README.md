@@ -1,4 +1,4 @@
-## Crypto Tracker
+# Crypto Tracker
 
 Crypto Tracker is a mobile cryptocurrency exchange rate tracker built with React Native
 
